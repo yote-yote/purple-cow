@@ -15,5 +15,5 @@ $db = new mysqli('localhost', 'username', 'password', 'the_actual_database');
 ```
 Change SMS Client
 ```php
-$smsMessage = new SMSRequest()
+$db = new SMSRequest()
 ```
