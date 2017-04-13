@@ -13,7 +13,6 @@
 <head>
 
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-998.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
     <meta name="author" content="Yote Yote" />
 
     <!-- Stylesheets
@@ -34,8 +33,21 @@
 
     <!-- Document Title
     ============================================= -->
-    <title>Purple Cow | Tanzania's Media Agency</title>
+    <title>Purple Cow · Tanzania's Leading Creative Media Agency</title>
+    <?php
+    $desc = "Experts in Property Marketing · Competitive media buying · Digital media options · Response analysis · Help with media planning";
+    ?>
+    <meta name="description" content="<?php echo $desc;?>"/>
 
+<!--    OG Facebook-->
+    <meta property='og:site_name' content='Purple Cow Media Agency, Inc.' />
+    <meta property='og:title' content='Purple Cow Media Agency, Inc.' />
+    <meta property='og:description' content="<?php echo $desc;?>" />
+
+    <meta property='og:image' content='http://gopurplecow.com/assets/images/og.jpg' />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property='og:url' content='http://gopurplecow.com' />
 
 </head>
 
@@ -90,10 +102,17 @@
                             <i class="icon-facebook"></i>
                         </a>
 
+
+                        <a href="http://leoleoplus.com/services/page/3784/purple-cow-media-limited" class="social-icon si-small si-borderless si-aim">
+                            <i class="icon-plus"></i>
+                            <i class="icon-line-square-plus"></i>
+                        </a>
+
                         <a href="#" class="social-icon si-small si-borderless si-twitter">
                             <i class="icon-twitter"></i>
                             <i class="icon-twitter"></i>
                         </a>
+
                         <?php /*
                         <a href="#" class="social-icon si-small si-borderless si-github">
                             <i class="icon-github"></i>
@@ -178,13 +197,13 @@
 
                             <div class="accordion accordion-border clearfix">
 
-                                <div class="acctitle"><i class="acc-closed icon-ok-circle"></i><i class="acc-open icon-remove-circle"></i>Our Mission</div>
+                                <div class="acctitle"><i class="acc-closed icon-ok-circle"></i><i class="acc-open icon-remove-circle"></i>Why Us</div>
                                 <div class="acc_content clearfix">Alex and the team are currently preparing content ataleta Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</div>
 
                                 <div class="acctitle"><i class="acc-closed icon-ok-circle"></i><i class="acc-open icon-remove-circle"></i>What we Do?</div>
                                 <div class="acc_content clearfix">Integer posuere erat a ante venenatis Alex and the team are currently preparing content dapibus posuere velit aliquet. Duis mollis, est non commodo luctus. Aenean lacinia bibendum nulla sed consectetur. Cras mattis consectetur purus sit amet fermentum.</div>
 
-                                <div class="acctitle"><i class="acc-closed icon-ok-circle"></i><i class="acc-open icon-remove-circle"></i>Our Company's Values</div>
+                                <div class="acctitle"><i class="acc-closed icon-ok-circle"></i><i class="acc-open icon-remove-circle"></i>Our Mission and Value</div>
                                 <div class="acc_content clearfix">Nullam id dolor id nibh ultricies Alex and the team are currently preparing content vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus. Aenean lacinia bibendum nulla sed consectetur.</div>
 
                             </div>
@@ -247,11 +266,11 @@
 
                         <article class="portfolio-item pf-media pf-icons wide">
                             <div class="portfolio-image imagescale">
-                                <a href="#">
-                                    <img src="http://canvashtml-cdn.semicolonweb.com/one-page/images/portfolio/mixed/1.jpg" alt="Open Imagination">
+                                <a href="javascript:void(0)">
+                                    <img src="assets/images/works/1.jpg" alt="Open Imagination">
                                 </a>
                                 <div class="i-overlay on-hover" style="background: rgba(255,255,255,0.7);">
-                                    <a href="#"><i class="icon-line-plus"></i></a>
+                                    <a href="javascript:void(0)"><i class="icon-line-plus"></i></a>
                                 </div>
                             </div>
                             <div class="portfolio-desc">
@@ -262,41 +281,41 @@
 
                         <article class="portfolio-item pf-illustrations">
                             <div class="portfolio-image imagescale">
-                                <a href="#">
-                                    <img src="http://canvashtml-cdn.semicolonweb.com/one-page/images/portfolio/mixed/2.jpg" alt="Locked Steel Gate">
+                                <a href="javascript:void(0)">
+                                    <img src="assets/images/works/2.jpg" alt="Locked Steel Gate">
                                 </a>
                                 <div class="i-overlay on-hover" style="background: rgba(255,255,255,0.7);">
-                                    <a href="#"><i class="icon-line-plus"></i></a>
+                                    <a href="javascript:void(0)"><i class="icon-line-plus"></i></a>
                                 </div>
                             </div>
                             <div class="portfolio-desc">
-                                <h3><a href="#">Locked Steel Gate</a></h3>
-                                <span><a href="#">Illustrations</a></span>
+                                <h3><a href="javascript:void(0)">Locked Steel Gate</a></h3>
+                                <span><a href="javascript:void(0)">Illustrations</a></span>
                             </div>
                         </article>
 
                         <article class="portfolio-item pf-graphics pf-uielements">
                             <div class="portfolio-image imagescale">
-                                <a href="#">
-                                    <img src="http://canvashtml-cdn.semicolonweb.com/one-page/images/portfolio/mixed/3.jpg" alt="Mac Sunglasses">
+                                <a href="javascript:void(0)">
+                                    <img src="assets/images/works/3.jpg" alt="Mac Sunglasses">
                                 </a>
                                 <div class="i-overlay on-hover" style="background: rgba(255,255,255,0.7);">
-                                    <a href="#"><i class="icon-line-plus"></i></a>
+                                    <a href="javascript:void(0)"><i class="icon-line-plus"></i></a>
                                 </div>
                             </div>
                             <div class="portfolio-desc">
-                                <h3><a href="#">Mac Sunglasses</a></h3>
-                                <span><a href="#">Graphics</a>, <a href="#">UI Elements</a></span>
+                                <h3><a href="javascript:void(0)">Mac Sunglasses</a></h3>
+                                <span><a href="javascript:void(0)">Graphics</a>, <a href="javascript:void(0)">UI Elements</a></span>
                             </div>
                         </article>
 
                         <article class="portfolio-item pf-media pf-icons wide">
                             <div class="portfolio-image imagescale">
-                                <a href="#">
-                                    <img src="http://canvashtml-cdn.semicolonweb.com/one-page/images/portfolio/mixed/4.jpg" alt="Open Imagination">
+                                <a href="javascript:void(0)">
+                                    <img src="assets/images/works/4.jpg" alt="Open Imagination">
                                 </a>
                                 <div class="i-overlay on-hover" style="background: rgba(255,255,255,0.7);">
-                                    <a href="#"><i class="icon-line-stack-2"></i></a>
+                                    <a href="javascript:void(0)"><i class="icon-line-stack-2"></i></a>
                                 </div>
                             </div>
                             <div class="portfolio-desc">
@@ -307,52 +326,119 @@
 
                         <article class="portfolio-item pf-uielements pf-icons">
                             <div class="portfolio-image imagescale">
-                                <a href="#">
-                                    <img src="http://canvashtml-cdn.semicolonweb.com/one-page/images/portfolio/mixed/11.jpg" alt="Backpack Contents">
+                                <a href="javascript:void(0)">
+                                    <img src="assets/images/works/5.jpg" alt="Backpack Contents">
                                 </a>
                                 <div class="i-overlay on-hover" style="background: rgba(255,255,255,0.7);">
-                                    <a href="#"><i class="icon-line-play"></i></a>
+                                    <a href="javascript:void(0)"><i class="icon-line-play"></i></a>
                                 </div>
                             </div>
                             <div class="portfolio-desc">
-                                <h3><a href="#">The Orange Bag</a></h3>
-                                <span><a href="#">Illustrations</a></span>
+                                <h3><a href="javascript:void(0)">The Orange Bag</a></h3>
+                                <span><a href="javascript:void(0)">Illustrations</a></span>
                             </div>
                         </article>
 
                         <article class="portfolio-item pf-media pf-icons">
                             <div class="portfolio-image imagescale">
-                                <a href="#">
-                                    <img src="http://canvashtml-cdn.semicolonweb.com/one-page/images/portfolio/mixed/6.jpg" alt="Open Imagination">
+                                <a href="javascript:void(0)">
+                                    <img src="assets/images/works/8.jpg" alt="Open Imagination">
                                 </a>
                                 <div class="i-overlay on-hover" style="background: rgba(255,255,255,0.7);">
                                     <a href="#"><i class="icon-line-plus"></i></a>
                                 </div>
                             </div>
                             <div class="portfolio-desc">
-                                <h3><a href="#">Open Imagination</a></h3>
-                                <span><a href="#">Media</a>, <a href="#">Icons</a></span>
+                                <h3><a href="javascript:void(0)">Open Imagination</a></h3>
+                                <span><a href="javascript:void(0)">Media</a>, <a href="#">Icons</a></span>
                             </div>
                         </article>
 
                         <article class="portfolio-item pf-uielements pf-icons">
                             <div class="portfolio-image imagescale">
-                                <a href="#">
-                                    <img src="http://canvashtml-cdn.semicolonweb.com/one-page/images/portfolio/mixed/7.jpg" alt="Backpack Contents">
+                                <a href="javascript:void(0)">
+                                    <img src="assets/images/works/4.jpg" alt="Backpack Contents">
                                 </a>
                                 <div class="i-overlay on-hover" style="background: rgba(255,255,255,0.7);">
-                                    <a href="#"><i class="icon-line-play"></i></a>
+                                    <a href="javascript:void(0)"><i class="icon-line-play"></i></a>
                                 </div>
                             </div>
                             <div class="portfolio-desc">
-                                <h3><a href="#">Backpack Contents</a></h3>
-                                <span><a href="#">UI Elements</a>, <a href="#">Icons</a></span>
+                                <h3><a href="javascript:void(0)">Backpack Contents</a></h3>
+                                <span><a href="javascript:void(0)">UI Elements</a>, <a href="#">Icons</a></span>
                             </div>
                         </article>
 
                     </div><!-- #portfolio end -->
 
                 </div>
+
+                <?php
+                /*
+
+      <div class="row section-content">
+
+			<div class="six columns">
+		      <h3>Our Process.</h3>
+
+		      <p>Our work is built around a close-knit relationship with our clients: Understanding, listening &amp; asking questions are as important to us as designing, planning &amp; coding beautiful websites and apps.</p>
+	      </div>
+
+	      <div class="six columns">
+		      <h3>Our Approach.</h3>
+
+		      <p>We believe that good design is good for business , and that design has a major impact on the way users &amp; customers perceive, and respond to, the brands they interact with daily.</p>
+	      </div>
+
+      </div> <!-- end section-content -->
+
+      <div class="row section-content">
+
+			<div class="six columns">
+		      <h3>Our Vision.</h3>
+                <p>To help brands express themselves via creative solutions.</p>
+	      </div>
+
+	      <div class="six columns">
+		      <h3>Our Objective.</h3>
+
+		      <p>To be an integrated marketing communications firm that provides brands with strategic marketing insights, strategic marketing planning and strategic creative solutions. </p>
+	      </div>
+		  <div class='twelve columns'>
+			  <h3>Our Services</h3>
+		  </div>
+		  <div class='three columns'>
+			  Creative<br />
+			  Animation<br />
+			  Video Production<br />
+			  Audio Production<br />
+			  Research
+		  </div>
+		  <div class='three columns'>
+			  Photography<br />
+			  Brand Management<br />
+			  Public Relation<br />
+			  Training<br />
+			  Event Management
+		  </div>
+		  <div class='three columns'>
+			  Consultancy<br />
+			  Advertising<br />
+			  Software Development<br />
+			  App Development<br />
+			  Content
+		  </div>
+		  <div class='three columns'>
+			  Website Development<br />
+			  Print Production<br />
+			  SEO<br />
+			  Social Media Marketing<br />
+			  Editorial Services
+		  </div>
+
+      </div> <!-- end section-content -->
+
+                 * */?>
 
                 <div class="line topmargin-lg bottommargin-lg"></div>
 
@@ -410,8 +496,9 @@
 
                             <div style="font-size: 16px; line-height: 1.7;">
                                 <address style="line-height: 1.7;">
-                                    Quality Centre<br>
-                                    Near Cinema Hall , Blah blah <br>
+                                    Quality Centre Mall<br>
+                                    Pugu Rad, Dar es salaam <br>
+                                    Tanzania<br>
                                 </address>
 
                                 <div class="clear topmargin"></div>
@@ -479,5 +566,4 @@
     ga('send', 'pageview');
 
 </script>
-<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"839484a19a","applicationID":"5289971","transactionName":"ZQEDZxZUD0FZVkxfX1xLNEENGglGVVkXVVFcEgBAS1EEX1cYVVNUWwVMUgNQD1FBG0heQA==","queueTime":0,"applicationTime":0,"atts":"SUYAEV5OHE8=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
 </html>

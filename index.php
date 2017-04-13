@@ -43,7 +43,7 @@
 
    <!-- Intro Section
    ================================================== -->
-   <section id="intro">
+   <section id="intro2" style="background-image: url(images/purple-cow-bg.jpg)">
        <div id='black_background'></div>
    	<header class="row">	 
 
@@ -76,6 +76,8 @@
 
                 <p>WE are a design-obsessed, technology-savvy team of web gurus and brand honchos, dedicated to creating outstanding branded solutions to real-world business problems.</p>
 
+				<p class="btn btn-default">Check The New Design</p>
+			<?php /*
                 <h5>Time Left Until Launching</h5>
 	   		<div id="counter" class="cf">
 	   			<span>134 <em>days</em></span> 
@@ -98,7 +100,7 @@
 	               
 	          	</form>
 	         </div>
-
+			*/?>
 	         <ul class="social">
 	            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
 	            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -296,6 +298,18 @@
    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
 
 	<script src="http://maps.google.com/maps/api/js?sensor=true" type="text/javascript"></script>
+
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-97333441-1', 'auto');
+		ga('send', 'pageview');
+
+	</script>
+
    <script src="js/gmaps.js"></script>
    <script src="js/waypoints.js"></script>
    <script src="js/jquery.countdown.js"></script>
